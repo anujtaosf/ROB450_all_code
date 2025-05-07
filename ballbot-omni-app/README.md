@@ -52,12 +52,12 @@ This folder also contains subdirectories created during earlier iterations of Sh
 ### `in-progress`
 The `in-progress` subdirectory contains scripts that represent partial implementations or work-in-progress ideas:
 
-1. **_DEMO_apriltag_rotate_camera.py**  
+1. `_DEMO_apriltag_rotate_camera.py`  
    This script was created during an attempt to integrate a servo motor with the RealSense camera. For ShortBot to become fully omnidirectional,
    the camera must not be limited to a single axis of vision. This script introduces a servo to the navigation module, enabling Shortbot to
    achieve a 360-degree field of view. This would help reduce time and energy spent rotating about the z-axis.
 
-2. **keyboard_teleop_lights.py**  
+2. `keyboard_teleop_lights.py`  
    This script is v2 of the existing keyboard teleoperation demo. It aims to integrate the LED matrix into the current teleop script,
     allowing for visual feedback while controlling Shortbot using the keyboard.
 
