@@ -37,3 +37,9 @@ Please enable **SPI** and **I2C** using **raspi-config**
 sudo raspi-config
 ```
 Navigate to **Interface Options** and then enable **SPI** and **I2C**.
+
+## Next Steps
+Go to the README.md in ballbot-omni-app for more documentation on code files and running the scripts
+```bash
+cd ballbot-omni-app
+```
