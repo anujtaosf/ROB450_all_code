@@ -14,7 +14,7 @@ Standalone Mode:
 - Run this file directly to test the balance controller with real IMU readings.
 - Outputs calculated torques (Tx, Ty, T1, T2, T3) for debugging.
 
-Author: [Your Name]
+Author: Anuhea Tao, Reina Mezher, Adam Hung, Joseph Fedoronko
 Date: January 2025
 """
 

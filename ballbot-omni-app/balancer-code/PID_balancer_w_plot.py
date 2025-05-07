@@ -18,14 +18,16 @@ running_v = np.array([0,0,0])
 FREQ = 50  # Frequency of control loop in Hz
 DT = 1 / FREQ  # Time step for each iteration in seconds
 
-KP_THETA_X = 2 #10.0       #18#18 #10.0  #36 #48 # Proportional gain for roll stability
-KP_THETA_Y =  KP_THETA_X#12.05#18#18 #10 #10.0  #36 #48 # Proportional gain for pitch stability
+######## TUNE THESE VALUES #############################################
+KP_THETA_X = 10     # Proportional gain for roll stability
+KP_THETA_Y =  KP_THETA_X  # Proportional gain for pitch stability
 
-KI_THETA_X = .3#.8         #1.07 #1.0 #6.8#1.8 #7.0 #3.50  #12.0  # Integral gain for roll stability
-KI_THETA_Y = KI_THETA_X#1.0#6.8#1.8 #7.0 #3.50  #12.0  # Integral gain for pitch stability
+KI_THETA_X = .3  # Integral gain for roll stability
+KI_THETA_Y = KI_THETA_X  # Integral gain for pitch stability
 
-KD_THETA_X = 0#.7          #.64#.6 #10 # Derivative gain for roll stability
-KD_THETA_Y = KD_THETA_X  # Derivative gain for pitch stability
+KD_THETA_X = 0  # Derivative gain for roll stability
+KD_THETA_Y = KD_THETA_X  #Derivative gain for pitch stability
+##########################################################################
 
 MAX_PLANAR_DUTY = 1.0
 

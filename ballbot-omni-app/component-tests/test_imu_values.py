@@ -1,15 +1,16 @@
 """
-ROB 311 - Ball-bot Sensing and Reading Demo
 This program uses a soft realtime loop to enforce loop timing. Soft real time loop is a  class
 designed to allow clean exits from infinite loops with the potential for post-loop cleanup operations executing.
 
-Authors: Senthur Raj, Gray Thomas, Yves Nazon and Elliott Rouse 
-Neurobionics Lab / Locomotor Control Lab
+This program prints imu values to the terminal
+
+Authors: Senthur Raj, Gray Thomas, Yves Nazon, Elliott Rouse , ROB 450 Team 5 (Reina, Anu, Joe, and Adam)
+Neurobionics Lab / Locomotor Control Lab / ROB 450 Team 5
 """
 
+import sys
+import threading
 import time
-import board
-import neopixel
 import numpy as np
 from threading import Thread
 from MBot.Messages.message_defs import mo_states_dtype, mo_cmds_dtype, mo_pid_params_dtype
@@ -22,15 +23,6 @@ DT = 1/FREQ
 RW = 0.048
 RK = 0.1210
 ALPHA = np.deg2rad(45)
-
-pixel_pin = board.D18
-
-num_pixels = 256
-ORDER = neopixel.GRB
-
-pixels = neopixel.NeoPixel(
-    pixel_pin, num_pixels, brightness=0.05, auto_write=False, pixel_order=ORDER
-)
 
 def register_topics(ser_dev:SerialProtocol):
     # Mo :: Commands, States
@@ -62,21 +54,16 @@ if __name__ == "__main__":
     print('Beginning program!')
     i = 0
 
-    pixels.fill((255, 0, 0))
-    pixels.show()
-
     for t in SoftRealtimeLoop(dt=DT, report=True):
         try:
             states = ser_dev.get_cur_topic_data(121)[0]
-
         except KeyError as e:
             continue
 
         if i == 0:
             print('Finished calibration\nStarting loop...')
-            pixels.fill((0, 255, 0))
-            pixels.show()
             t_start = time.time()
+
         i = i + 1
         t_now = time.time() - t_start
 
