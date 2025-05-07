@@ -1,3 +1,14 @@
+"""
+Teleop Control using Keyboard for ShortBot
+
+This module implements the keyboard module to teleoperate Shortbot. Use
+keyboard controls 'w', 'a', 's', and 'd' to command Shortbot to traverse up, left,
+down, and right, respectively.
+
+Authors: Anuhea Tao, Reina Mezher, Adam Hung, Joseph Fedoronko
+Date: May 2025
+"""
+
 import threading
 import time
 from loop import SoftRealtimeLoop

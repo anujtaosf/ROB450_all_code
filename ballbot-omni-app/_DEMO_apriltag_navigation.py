@@ -1,3 +1,19 @@
+"""
+April Tag Navigation for ShortBot
+
+This module implements the AprilTag navigation on ShortBot using the Intel 
+RealSense camera module and the apriltag module. The robot will navigate the 
+to AprilTag by rotating about the z-axis until it has located an AprilTag 
+within its field of view. Once the AprilTag is located, ShortBot will drive 
+towards it while keeping the tag centered in its camera frame.
+
+**This module can be run in simultaneity with '_DEMO_apriltag_lights.py' for
+LED lights to act as visual cues
+
+Authors: Anuhea Tao, Reina Mezher, Adam Hung, Joseph Fedoronko
+Date: May 2025
+"""
+
 import threading
 import time
 from loop import SoftRealtimeLoop

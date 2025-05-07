@@ -1,3 +1,17 @@
+"""
+Lighting Cues for AprilTag Navigation
+
+This module is written to be run simultaneously with '_DEMO_apriltag_navigation.py'. 
+On most devices, this module must be run using with "sudo" as the neopixel library 
+requires it. The module is designed to read in velocity values of the robot and 
+program the lights accordingly. When the robot is searching for the AprilTag, the 
+lights will turn red. Conversely, when the robot has located the AprilTag, the lights 
+will change to green
+
+Authors: Anuhea Tao, Reina Mezher, Adam Hung, Joseph Fedoronko
+Date: May 2025
+"""
+
 import board, neopixel, time
 WIDTH, HEIGHT = 33, 8
 NUMPIX = WIDTH*HEIGHT

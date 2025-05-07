@@ -15,7 +15,7 @@ Standalone Mode:
 - Outputs calculated torques (Tx, Ty, T1, T2, T3) for debugging.
 
 Author: Anuhea Tao, Reina Mezher, Adam Hung, Joseph Fedoronko
-Date: January 2025
+Date: May 2025
 """
 
 import numpy as np
