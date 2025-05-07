@@ -1,4 +1,6 @@
-<img src="https://github.com/neurobionics/rob311/blob/main/rob311.png" width="1024">
+## Rpi Setup
+
+If you have not already configured your Raspberry Pi, please first follow the instructions in the [Rpi Setup Documentation](https://aquamarine-law-a2d.notion.site/ROB311-Instruction-Raspberry-Pi-Setup-15a0653ccdcc8030a996c165d6098bb4) for more information.
 
 ## Installation
 
