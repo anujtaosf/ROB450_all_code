@@ -1,5 +1,6 @@
-<img src="https://github.com/anujtaosf/ROB450_all_code/tall_ballbot_vector.png](https://github.com/anujtaosf/ROB450_all_code/blob/main/tall_ballbot_vector.png" width="1024">
-
+<div align="center">
+  <img src="https://github.com/anujtaosf/ROB450_all_code/blob/main/tall_ballbot_vector.png" width="225">
+</div>
 
 ## Rpi Setup
 
