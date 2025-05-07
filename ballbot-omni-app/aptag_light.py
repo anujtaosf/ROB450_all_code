@@ -191,37 +191,6 @@ if __name__ == "__main__":
                 pixels.fill((0,255,0))
                 pixels.show()
 
-
-            
-
-
-
-            # pixels.fill((0,0,0))
-            # pixels.show()
-
-            # if(T1p!=T1 or T2p!=T2 or T3p!=T3):
-            #     pixels.fill((155,0,100))
-            #     # pixels.show()
-
-            # if(T1p - T1 > EPS2 or T2p - T2 > EPS2 or T3p - T3 > EPS2):
-            #     pixels.fill((0,255,0))
-            #     detected = True
-            #     pixels.fill((0,255,0))
-            #     pixels.show()
-        
-            # if(detected == True):
-            #     count += 1
-            # else:
-            #     count = 0
-
-            # if(count != 10):
-            #     continue
-            # else:
-            #     count = 0
-            
-            
-
-
             T1p, T2p, T3p = T1, T2, T3
 
             # pixels.show()
