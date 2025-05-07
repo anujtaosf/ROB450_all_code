@@ -1,3 +1,6 @@
+<img src="https://github.com/anujtaosf/ROB450_all_code/tall_ballbot_vector.png](https://github.com/anujtaosf/ROB450_all_code/blob/main/tall_ballbot_vector.png" width="1024">
+
+
 ## Rpi Setup
 
 If you have not already configured your Raspberry Pi, please first follow the instructions in the [Rpi Setup Documentation](https://aquamarine-law-a2d.notion.site/ROB311-Instruction-Raspberry-Pi-Setup-15a0653ccdcc8030a996c165d6098bb4) for more information.
